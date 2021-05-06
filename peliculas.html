@@ -29,7 +29,7 @@
                     var peliculas = respuesta.data;
                     console.log(peliculas);
                     peliculas.forEach(function(pelicula,i){
-                        document.querySelector("main").innerHTML += "<article><a href='pelicula.html?nro=" + i + "'><img src='images/" + pelicula.pic_sm + "'><div><h2>" + pelicula.name + "</h2></div></article>";
+                        document.querySelector("main").innerHTML += "<article><a href='pelicula.html?nro=" + i + "'><img src='images/" + pelicula.pic_sm + "'><div><h2>" + pelicula.Name + "</h2></div></article>";
                     })
             }
         });
