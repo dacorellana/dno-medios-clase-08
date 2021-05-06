@@ -21,28 +21,66 @@
                 </div>
             </main>
             <footer>
-                <p><a href="#">Daniela Orellana</a> <a href="#">DNO037</a></p>
+                <p><a href="https://github.com/dacorellana">Daniela Orellana</a> <a href="https://github.com/profesorfaco/dno037-2021/tree/main/clase-08">DNO037</a></p>
             </footer>
         </div>
 <script>
     var mymap = L.map('mapa').setView([33.5427796,9.9672612], 2);
+
+
+  var e1 = L.icon({
+      iconUrl: 'images/icono-1.png',
+      iconSize:     [50, 50]});
+
+  var e2 = L.icon({
+          iconUrl: 'images/icono-2.png',
+          iconSize:     [50, 50]});
+
+  var e3 = L.icon({
+         iconUrl: 'images/icono-3.png',
+         iconSize:     [50, 50]});
+  var e4 = L.icon({
+         iconUrl: 'images/icono-4.png',
+         iconSize:     [50, 50]});
+
+  var e5 = L.icon({
+        iconUrl: 'images/icono-5.png',
+        iconSize:     [50, 50]});
+
+  var e6 = L.icon({
+        iconUrl: 'images/icono-6.png',
+        iconSize:     [50, 50]});
+
+  var e7 = L.icon({
+        iconUrl: 'images/icono-7.png',
+        iconSize:     [50, 50]});
+
+  var e8 = L.icon({
+        iconUrl: 'images/icono-8.png',
+        iconSize:     [50, 50]});
+
+  var e9 = L.icon({
+        iconUrl: 'images/icono-9.png',
+        iconSize:     [50, 50]});
+
+
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-        maxZoom: 18,
-        id: 'mapbox/dark-v10',
-        tileSize: 512,
+        maxZoom: 20,
+        id: 'mapbox/light-v10',
+        tileSize: 514,
         zoomOffset: -1
-    }).addTo(mymap);
-    L.marker([36.241944, -116.825833]).addTo(mymap).bindPopup("<b>IV</b>. Death Valley National park.");
-    L.marker([60.533333, 7.416667]).addTo(mymap).bindPopup("<b>V</b>. Noruega.");
-    L.marker([41.74, -123.96]).addTo(mymap).bindPopup("<b>VI</b>. Del Norte County.");
+      }).addTo(mymap);
+       L.marker([36.241944, -116.825833], {icon: e1}).addTo(mymap).bindPopup("<b>IV</b>. Death Valley National park.");
+       L.marker([60.533333, 7.416667], {icon: e2}).addTo(mymap).bindPopup("<b>V</b>. Noruega.");
+       L.marker([41.74, -123.96], {icon: e3}).addTo(mymap).bindPopup("<b>VI</b>. Del Norte County.");
 
-    L.marker([36.816667, 10.183333]).addTo(mymap).bindPopup("<b>I</b>. Tunisia.");
-    L.marker([45.965, 9.2025]).addTo(mymap).bindPopup("<b>II</b>. Villa del Bialbanello.");
-    L.marker([37.755, 14.995]).addTo(mymap).bindPopup("<b>III</b>. Mount Etna.");
+       L.marker([36.816667, 10.183333], {icon: e4}).addTo(mymap).bindPopup("<b>I</b>. Tunisia.");
+       L.marker([45.965, 9.2025], {icon: e5}).addTo(mymap).bindPopup("<b>II</b>. Villa del Bialbanello.");
+       L.marker([37.755, 14.995], {icon: e6}).addTo(mymap).bindPopup("<b>III</b>. Mount Etna.");
 
-    L.marker([54.583333, -3.15]).addTo(mymap).bindPopup("<b>VII</b>. Derwent water.");
-    L.marker([-20.133775, -67.489133]).addTo(mymap).bindPopup("<b>VIII</b>. Salar de Uyuni.");
-    L.marker([51.841985, -0.605755]).addTo(mymap).bindPopup("<b>IX</b>. Ivinghoe Beacon.");
+       L.marker([54.583333, -3.15], {icon: e7}).addTo(mymap).bindPopup("<b>VII</b>. Derwent water.");
+       L.marker([-20.133775, -67.489133], {icon: e8}).addTo(mymap).bindPopup("<b>VIII</b>. Salar de Uyuni.");
+       L.marker([51.841985, -0.605755], {icon: e9}).addTo(mymap).bindPopup("<b>IX</b>. Ivinghoe Beacon.");
 </script>
     </body>
 </html>
