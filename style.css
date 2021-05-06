@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(246, 83, 72, 0.75);
 }
 
 :hover{
@@ -164,7 +164,7 @@ main section h4{
 }
 
 main section img{
-    max-width:100%;
+    max-width:80%;
     height:auto;
     margin:1.5rem 0;
 }
