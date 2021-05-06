@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,700&display=swap');
 
 :root{
     --fondo: #000;
@@ -12,18 +12,17 @@
 }
 
 body {
-    font-family: Arial, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: var(--fondo);
-    color: rgba(255, 251, 0);
+    color: rgba(255, 255, 255);
 }
 
 body.portada{
     background:var(--fondo) url('images/portada.jpeg') right bottom no-repeat;
-    background-size:auto 110%;
+    background-size:auto 120%;
 }
 
 a {
-    font-weight: bold;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
 }
@@ -76,12 +75,15 @@ header div{
 }
 
 header div h1{
-    font-size:calc(1.5rem + 1vw);
+    font-size:calc(3rem + 1vw);
+    font-weight: 900;
     line-height: 1;
     text-shadow: 0 0 2px var(--fondo);
 }
 
 header div p{
+    font-size: calc(0.5rem + 1vw);
+    font-weight: 300;
     margin-top:1rem;
     line-height: 1.5;
     text-shadow: 0 0 2px var(--fondo);
