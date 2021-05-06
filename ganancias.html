@@ -18,7 +18,7 @@
                 </canvas>
             </main>
             <footer>
-                <p><a href="#">Daniela Orellana</a> <a href="#">DNO037</a></p>
+                 <p><a href="https://github.com/dacorellana">Daniela Orellana</a> <a href="https://github.com/profesorfaco/dno037-2021/tree/main/clase-08">DNO037</a></p>
             </footer>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
@@ -27,12 +27,18 @@ var ctx = document.getElementById('grafico').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['La primera', 'La segunda', 'La tercera', 'La cuarta', 'La quinta', 'La sexta', 'La séptima', 'La octava', 'La novena'],
-        datasets: [{
-            label: '# of Votes',
-            data: [10, 7, 2, 5, 8, 20, 8, 4, 1],
-            backgroundColor: 'rgba(20, 100, 180, 0.5)',
-            borderWidth: 0
+        labels: ['Episodio IV', 'Episodio V', 'Episodio VI', 'Episodio I', 'Episodio II', 'Episodio III', 'Episodio VII', 'Episodio VIII', 'Episodio IX'],
+
+
+       datasets: [{
+
+            label: 'Ganancias',
+           data: [775, 538, 475, 1000, 649, 848, 2000, 1200, 1000],
+            backgroundColor: 'rgba(35, 205, 235, 0.8)',
+           order: 1
+
+
+
         }]
     },
     options: {
